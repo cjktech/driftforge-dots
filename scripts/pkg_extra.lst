@@ -1,0 +1,35 @@
+# -------------------------------------------- // Gaming
+steam						# game library and launcher
+# gamemode 					# performance optimalizaiotn daemon for games
+# mangohud 					# in-game performance overlay
+# moonlight					# game streaming
+
+# -------------------------------------------- // Development - Runtimes & SDKs
+# python					# python runtime
+# python-pip					# python package manager
+# go						# go runtime and compiler
+# dotnet-sdk					# C# / .NET SDK
+
+# -------------------------------------------- // Development - Tools
+# docker                      			# container engine
+# docker-compose              			# multi-container orchestration
+# lazygit                     			# terminal git UI, pairs great with neovim
+# github-cli                  			# GitHub CLI for repo management
+# jq                          			# JSON processor, essential for Go/Python work
+# ripgrep                     			# fast grep, neovim telescope dependency
+# fd                          			# fast find, neovim telescope dependenc
+
+# -------------------------------------------- // Terminal Utilities
+# btop       		                 	# modern resource monitor
+# fzf                         			# fuzzy finder
+# zoxide                      			# smarter cd command
+# bat                         			# cat with syntax highlighting
+# eza                         			# modern ls replacement
+# rsync                       			# file sync and backup
+
+# -------------------------------------------- // Communication
+# discord					# chat
+
+# -------------------------------------------- // Music
+# spotify					# music streaming service
+

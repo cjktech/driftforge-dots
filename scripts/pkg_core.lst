@@ -1,0 +1,62 @@
+# -------------------------------------------- // Audio
+pipewire 					# audio/video server
+pipewire-pulse 					# pipewire pulseaudio client
+wireplumber					# pipewire session manager
+pavucontrol					# pulseaudio volume control
+
+# -------------------------------------------- // Bluetooth
+bluez						# bluetooth protocol stack
+bluez-utils					# bluetooth utility cli
+blueman						# bluetooth manager gui
+
+# -------------------------------------------- // Network
+networkmanager					# network manager
+
+# -------------------------------------------- // Display Manager
+greetd						# display manager
+greetd-regreet					# gtk greeter
+
+# -------------------------------------------- // Window Manager
+hyprland					# wlroots-based wayland compositor
+hyprpolkitagent					# authentication agent
+mako						# notification daemon
+fuzzel 						# application launcher
+waybar						# system bar
+cliphist					# clipboard manager
+grim						# screenshot tool
+slurp						# region select for screenshot/screenshare
+# hypridle					# idle daemon
+# hyprlock					# lock screen
+
+
+# -------------------------------------------- // Portal & Qt
+xdg-desktop-portal-hyprland			# xdg desktop portal for hyprland
+qt5-wayland					# wayland support in qt5
+qt6-wayland					# wayland support in qt6
+
+# -------------------------------------------- // Applications
+firefox						# browser
+kitty						# terminal
+thunderbird					# email
+thunar 						# gtk file manager
+thunar-volman					# gtk volume manager
+gvfs						# thunar-volman automount dependency
+neovim 						# terminal text editor
+
+
+
+tree #?
+ttf-fantasque-nerd #?
+sudo #?
+linux #?
+linux-firmware #?
+efibootmgr #?
+
+# need to be in pre-install:
+grub #?
+pacman #?
+# UEFI boot mgr ???
+
+# need to be in install
+nividia-open & nvidia-utils & egl-wayland
+yay

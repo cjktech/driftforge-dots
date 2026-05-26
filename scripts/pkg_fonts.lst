@@ -1,0 +1,11 @@
+# -------------------------------------------- // Terminal
+ttf-fantasque-nerd          			# kitty terminal font
+
+# -------------------------------------------- // Icons
+ttf-font-awesome            			# waybar and system icons
+
+# -------------------------------------------- // Emoji
+noto-fonts-emoji            			# emoji support system-wide
+
+# -------------------------------------------- // General
+noto-fonts                  			# broad unicode coverage fallback
