@@ -1,0 +1,11 @@
+# -------------------------------------------- // Services
+# Syntax: service|context|command
+#    context: system|user
+#    command: enabe|start|restart --now etc
+NetworkManager|system|enable
+bluetooth|system|enable
+greetd|system|enable
+# -------------------------------------------- // User Services
+pipewire|user|enable
+pipewire-pulse|user|enable
+wireplumber|user|enable
