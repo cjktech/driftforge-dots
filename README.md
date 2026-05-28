@@ -20,7 +20,7 @@ W.I.P.
 
 ## Install
 
-Clone the rope and run the installer. 
+Clone the repo and run the installer. 
 
 ```bash
 sudo pacman -S --needed git base-devel

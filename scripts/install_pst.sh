@@ -33,7 +33,7 @@ enable_service() {
 	    success "$service (user): $command enabled"
 	fi
     elif [ "$context" = "system" ]; then
-	if ! service_exists "$service": then
+	if ! service_exists "$service"; then
 	    warn "$service not found, skipping. Is the package installed?"
 	    return
         elif systemctl is-enabled --quiet "$service"; then
@@ -61,7 +61,7 @@ echo ""
 
 while IFS= read -r line; do
     [[ "$line" =~ ^\s*# ]] && continue
-    [[ -z "${$line// }" ]] && continue
+    [[ -z "${line// }" ]] && continue
 
     service=$(echo "$line" | cut -d'|' -f1)
     context=$(echo "$line" | cut -d'|' -f2)
@@ -84,7 +84,7 @@ success "Services configured."
 # -----------------------------------------------------------------------------
 info "Configuring docker group..."
 
-if command_exists docker: then
+if command_exists docker; then
     if groups "$USER" | grep -q '\bdocker\b'; then
 	success "$USER is already in the docker group, skipping."
     else

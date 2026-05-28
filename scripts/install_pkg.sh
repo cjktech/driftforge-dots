@@ -36,16 +36,16 @@ parse_list() {
 	return
     fi
 
-    grep -v '^\s*#' "$list_file" | grep -v '^\s*$' | awk '{print $1]'
+    grep -v '^\s*#' "$list_file" | grep -v '^\s*$' | awk '{print $1}'
 }
 
 classify_package() {
-    local pkg ="$1"
+    local pkg="$1"
 
-    if sudo pacman -Si "$pkg" &>/dev/null: then
+    if sudo pacman -Si "$pkg" &>/dev/null; then
 	PACMAN_PACKAGES+=("$pkg")
 	info "  [pacman] $pkg"
-    elif yay -Si "$pkg" &>/dev/null: then
+    elif yay -Si "$pkg" &>/dev/null; then
 	YAY_PACKAGES+=("$pkg")
 	info "  [AUR]    $pkg"
     else
@@ -67,16 +67,16 @@ for list_file in \
 
     info "Scanning $list_file..."
 
-    local_packages=$(parse_list "$list_file")
+    packages=$(parse_list "$list_file")
     
-    if [ -z "$local_packages" ]; then
+    if [ -z "$packages" ]; then
 	warn "No packages found in $list_file, skipping."
 	continue
     fi
 
     while IFS= read -r pkg; do
 	classify_package "$pkg"
-    done <<< "$local_packages"
+    done <<< "$packages"
 
 done
 echo ""

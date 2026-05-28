@@ -7,7 +7,7 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/global_fn.sh
+source "$SCRIPT_DIR/global_fn.sh"
 
 # -----------------------------------------------------------------------------
 # Welcome
@@ -32,7 +32,7 @@ check_not_root
 warn "This will install packages, enable services, and stow configs."
 warn "Make sure you have reviewed the package lists before continuing."
 echo ""
-read a-rp "  [?] Continue with installation? [y/n]: " confirm
+read -rp "  [?] Continue with installation? [y/n]: " confirm
 
 case "$confirm" in
     y|Y) info "Starting installation..." ;;
