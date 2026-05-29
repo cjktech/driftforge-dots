@@ -42,3 +42,9 @@ Please reboot after the install script completes.
 
 Packages are split into list files under 'scripts/'
 Commented-out lines are intentional: uncomment what you need before installing.
+
+---
+
+## Reminders
+
+The windowrules in the hypr config are hardcoded to windows on my base desktop, nad will probably do nothing on your device. Read these and change them where needed.

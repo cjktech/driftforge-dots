@@ -11,17 +11,17 @@ end)
 
 
 require("config.keybinds")
-require("config.workspacerules")
 require("config.windowrules")
-require("config.monitors")
 require("config.userprefs")
 
+require("device_specific.workspacerules")
+require("device_specific.monitors")
 
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
 
-local colors = require("theme.colors")
+local colors = dofile(os.getenv("HOME") .. "/.config/theme/colors.lua")
 local color_active_border_1 = colors.brushed_zinc
 local color_active_border_2 = colors.soft_brass
 local color_inactive_border = colors.raised_black

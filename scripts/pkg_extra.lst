@@ -16,8 +16,10 @@ steam						# game library and launcher
 # lazygit                     			# terminal git UI, pairs great with neovim
 # github-cli                  			# GitHub CLI for repo management
 # jq                          			# JSON processor, essential for Go/Python work
-# ripgrep                     			# fast grep, neovim telescope dependency
-# fd                          			# fast find, neovim telescope dependenc
+ripgrep                     			# fast grep, neovim telescope dependency
+fd                          			# fast find, neovim telescope dependency
+tree-sitter-cli					# neovim treesitter parser tool
+unzip						# archive extraction utility
 
 # -------------------------------------------- // Terminal Utilities
 # btop       		                 	# modern resource monitor
