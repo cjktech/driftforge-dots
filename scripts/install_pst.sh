@@ -93,7 +93,7 @@ if command_exists docker; then
 	warn "Docker group change takes effect on next login."
     fi
 else
-    warn "DOcker not found, skipping. Install docker first if you plan to use it."
+    warn "Docker not found, skipping. Install docker first if you plan to use it."
 fi
 
 # -----------------------------------------------------------------------------
@@ -117,7 +117,7 @@ for config_dir in "$CONFIGS_DIR"/*/; do
     fi
 
     info "Stowing $config_name..."
-    stow_output=$(stow -d "$CONFIGS_DIR" -t ~ "$config_name" 2>&1
+    stow_output=$(stow -d "$CONFIGS_DIR" -t ~ "$config_name" 2>&1)
 
     stow_exit=$?
 
