@@ -8,7 +8,7 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DOTS_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-source "$SCRIPT_DIR/lib/global_fn.sh"
+source "$SCRIPT_DIR/global_fn.sh"
 
 # -----------------------------------------------------------------------------
 # System checks

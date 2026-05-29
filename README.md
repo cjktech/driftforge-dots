@@ -29,7 +29,7 @@ cd driftforge-dots/scripts
 ./install.sh
 ```
 
-The installer runs in threee stages:
+The installer runs in three stages:
 1. **Pre-install** - core build tools and drivers
 2. **Packages** - installs all packages
 3. **Post-install** - enableds services, docker and stows all configs
