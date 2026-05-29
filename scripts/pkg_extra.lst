@@ -1,8 +1,9 @@
 # -------------------------------------------- // Gaming
 steam						# game library and launcher
-# gamemode 					# performance optimalizaiotn daemon for games
-# mangohud 					# in-game performance overlay
-# moonlight					# game streaming
+# gamemode					# performance optimalizaiotn daemon for games
+# mangohud					# in-game performance overlay
+moonlight-qt					# game streaming
+# sunshine					# something to do with moonlight:RESEARCH
 
 # -------------------------------------------- // Development - Runtimes & SDKs
 # python					# python runtime
@@ -11,23 +12,23 @@ steam						# game library and launcher
 # dotnet-sdk					# C# / .NET SDK
 
 # -------------------------------------------- // Development - Tools
-# docker                      			# container engine
-# docker-compose              			# multi-container orchestration
-# lazygit                     			# terminal git UI, pairs great with neovim
-# github-cli                  			# GitHub CLI for repo management
-# jq                          			# JSON processor, essential for Go/Python work
-ripgrep                     			# fast grep, neovim telescope dependency
-fd                          			# fast find, neovim telescope dependency
+# docker					# container engine
+# docker-compose				# multi-container orchestration
+# lazygit					# terminal git UI, pairs great with neovim
+# github-cli					# GitHub CLI for repo management
+# jq						# JSON processor, essential for Go/Python work
+ripgrep						# fast grep, neovim telescope dependency
+fd						# fast find, neovim telescope dependency
 tree-sitter-cli					# neovim treesitter parser tool
 unzip						# archive extraction utility
 
 # -------------------------------------------- // Terminal Utilities
-# btop       		                 	# modern resource monitor
-# fzf                         			# fuzzy finder
-# zoxide                      			# smarter cd command
-# bat                         			# cat with syntax highlighting
-# eza                         			# modern ls replacement
-# rsync                       			# file sync and backup
+# btop						# modern resource monitor
+# fzf						# fuzzy finder
+# zoxide					# smarter cd command
+# bat						# cat with syntax highlighting
+# eza						# modern ls replacement
+# rsync						# file sync and backup
 
 # -------------------------------------------- // Communication
 # discord					# chat
