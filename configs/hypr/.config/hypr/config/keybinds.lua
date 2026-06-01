@@ -16,6 +16,27 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 
+--hl.bind(mainMod .. " + mouse_up", hl.dsp.workspace.move({ workspace = "e+1", monitor = "HDMI-A-2"}))
+--hl.bind(mainMod .. " + mouse_down", hl.dsp.workspace.move({ workspace = "e-1", monitor = "HDMI-A-2" }))
+
+--hl.bind(mainMod .. " + 1", hl.workspace(1))
+--hl.bind(mainMod .. " + 2", hl.workspace(2))
+--hl.bind(mainMod .. " + 3", hl.workspace(3))
+--hl.bind(mainMod .. " + 4", hl.workspace(4))
+--hl.bind(mainMod .. " + 5", hl.workspace(5))
+--hl.bind(mainMod .. " + 6", hl.workspace(6))
+--hl.bind(mainMod .. " + 7", hl.workspace(7))
+--hl.bind(mainMod .. " + 8", hl.workspace(8))
+--hl.bind(mainMod .. " + 9", hl.workspace(9))
+
+hl.bind(mainMod .. " + CTRL + S", hl.dsp.window.move({ workspace = "special:spotify" }))
+hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("spotify"))
+
+
+
+
+
+
 
 -- AUDIO CONTROL
 

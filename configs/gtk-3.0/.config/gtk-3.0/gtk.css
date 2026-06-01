@@ -1,0 +1,45 @@
+@define-color bg_color		    #11161C;
+@define-color bg_raised		    #161D24;
+
+@define-color text_primary	    #C7D0D9;
+@define-color text_secondary	#A7B1BA;
+@define-color text_muted	    #6E7781;
+
+@define-color accent		    #C9A46A;
+@define-color highlight		    #d2b07b;
+@define-color border_active	    #A7B1BA;
+@define-color border_inactrive	#161D24;
+
+@define-color theme_selected_bg_color #6E7781;
+@define-color theme_unfocused_selected_bg_color #6E7781;
+
+window, 
+.thunar .view {
+	background-color: @bg_color;
+	color: @text_secondary;
+}
+.thunar .view *:selected {
+	background: @text_muted;
+	color: @bg_raised;
+}
+.view:hover {
+	color: @accent;
+}
+
+toolbar {
+	background-color: @bg_raised;
+}
+
+menubar {
+	background-color: @accent;
+	color: @bg_color;
+}
+
+menu {
+	background-color: @bg_raised;
+}
+
+menuitem:hover {
+	background: @highlight;
+	color: @bg_color;
+}
