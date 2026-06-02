@@ -13,27 +13,22 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 
---hl.bind(mainMod .. " + mouse_up", hl.dsp.workspace.move({ workspace = "e+1", monitor = "HDMI-A-2"}))
---hl.bind(mainMod .. " + mouse_down", hl.dsp.workspace.move({ workspace = "e-1", monitor = "HDMI-A-2" }))
+-- WORKSPACE CONTROL
 
---hl.bind(mainMod .. " + 1", hl.workspace(1))
---hl.bind(mainMod .. " + 2", hl.workspace(2))
---hl.bind(mainMod .. " + 3", hl.workspace(3))
---hl.bind(mainMod .. " + 4", hl.workspace(4))
---hl.bind(mainMod .. " + 5", hl.workspace(5))
---hl.bind(mainMod .. " + 6", hl.workspace(6))
---hl.bind(mainMod .. " + 7", hl.workspace(7))
---hl.bind(mainMod .. " + 8", hl.workspace(8))
---hl.bind(mainMod .. " + 9", hl.workspace(9))
+--hl.bind(mainMod .. " + mouse_up", hl.dispatch({ direction = "left", action = "workspace"}))
+--hl.bind(mainMod .. " + mouse_down", hl.dispatch({ direction = "right", action = "workspace" }))
 
-hl.bind(mainMod .. " + CTRL + S", hl.dsp.window.move({ workspace = "special:spotify" }))
+
+
+-- SPECIAL WORKSPACES
+
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("spotify"))
-
-
-
+hl.bind(mainMod .. " + D", hl.dsp.workspace.toggle_special("discord"))
+hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("mail"))
+hl.bind(mainMod	.. " + B", hl.dsp.workspace.toggle_special("browser"))
 
 
 
