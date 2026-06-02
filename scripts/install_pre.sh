@@ -24,6 +24,24 @@ sudo pacman -S --needed --noconfirm base-devel git stow
 success "Core build tools installed."
 
 # -----------------------------------------------------------------------------
+# Enable multilib
+# -----------------------------------------------------------------------------
+info "Enabling multilib repository..."
+
+if grep -q '^\[multilib\]' /etc/pacman.conf; then
+    success "multilib already enabled, skipping"
+else
+    sudo sed -i '/^#\[multilib\]/{
+        s/^#//
+        n
+        s/^#//
+    }' /etc/pacman.conf
+    success "multilib enabled."
+    info "Syncing pacman databases..."
+    sudo pacman -Sy
+fi
+
+# -----------------------------------------------------------------------------
 # Install yay (AUR helper)
 # -----------------------------------------------------------------------------
 if command -v yay &>/dev/null; then
