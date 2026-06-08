@@ -13,6 +13,6 @@ require("config.windowrules")
 require("config.userprefs")
 require("config.design")
 require("config.layout")
+require("config.workspacerules")
 
-require("device_specific.workspacerules")
 require("device_specific.monitors")

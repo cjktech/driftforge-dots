@@ -2,7 +2,7 @@
 --- DESIGN ---
 --------------
 
-local colors = dofile(os.getenv("HOME") .. "/.config/theme/colors.lua")
+local colors = dofile(os.getenv("HOME") .. "/.config/theme/hypr/colors.lua")
 
 hl.curve("snap", { type = "bezier", points = {{ 0.05, 0.9 }, { 0.1, 1.0 }} })
 hl.curve("deliberate", { type = "bezier", points = {{ 0.25, 0.85}, { 0.1,  1.0 }} })

@@ -12,7 +12,7 @@ W.I.P.
 ## Requirements
 
 - Arch Linux
-- A Turing (RTX 20xx / GTX 1650) or newer Nvidia GPU, or any modern AMD GPU
+- A RTX 20xx/GTX 1650 or newer Nvidia GPU, or any modern AMD GPU. Any internal gpu on a CPU will work as well
 - An internet connection
 - A non-root user with sudo access
 

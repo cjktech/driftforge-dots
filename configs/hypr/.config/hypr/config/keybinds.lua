@@ -11,7 +11,7 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
@@ -21,7 +21,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 --hl.bind(mainMod .. " + mouse_up", hl.dispatch({ direction = "left", action = "workspace"}))
 --hl.bind(mainMod .. " + mouse_down", hl.dispatch({ direction = "right", action = "workspace" }))
 
-
+-- find out how to emulate three finger touchpad swipe. Either by shell script or dispatcher
 
 -- SPECIAL WORKSPACES
 
